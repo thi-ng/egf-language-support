@@ -1,0 +1,12 @@
+{
+  "comments": {
+    "lineComment": ";"
+  },
+  "autoClosingPairs": [{ "open": ">>>", "close": "<<<", "notIn": ["string"] }],
+  "folding": {
+    "markers": {
+      "start": "^[A-Za-z0-9:._-]+$",
+      "end": "\\n{2,}"
+    }
+  }
+}

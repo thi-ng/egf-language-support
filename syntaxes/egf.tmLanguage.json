@@ -1,0 +1,82 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Extensible Graph Format",
+  "fileTypes": ["egf"],
+  "patterns": [
+    {
+      "include": "#comment"
+    },
+    {
+      "include": "#keyword"
+    },
+    {
+      "include": "#variable"
+    },
+    {
+      "include": "#constant"
+    },
+    {
+      "include": "#string"
+    }
+  ],
+  "repository": {
+    "comment": {
+      "patterns": [{ "match": "(?<=^|\\s);.*$", "name": "comment.line.egf" }]
+    },
+    "keyword": {
+      "patterns": [
+        {
+          "name": "keyword.control.proc.egf",
+          "match": "(?<=^)(@prefix|@include)(?=\\s)"
+        },
+        {
+          "name": "keyword.other.ref.egf",
+          "match": "\\s->(?=\\s)"
+        },
+        {
+          "name": "keyword.control.tag.egf",
+          "match": "\\s#[a-z0-9_-]+(?=\\s)"
+        }
+      ]
+    },
+    "variable": {
+      "patterns": [
+        {
+          "name": "entity.name.tag.egf",
+          "match": "(?<=^)[A-Za-z0-9:@_-]+$"
+        },
+        {
+          "name": "entity.name.other.egf",
+          "match": "\\s[A-Za-z0-9_-]+:.*$"
+        },
+        {
+          "name": "entity.name.function.egf",
+          "match": "(?<=^)(\\t|\\u0020{4})[A-Za-z0-9:@_-]+(?=\\s)"
+        }
+      ]
+    },
+    "constant": {
+      "patterns": [
+        {
+          "match": "\\s([-+]?[0-9a-fA-F]+(\\.[0-9]*e(-?[0-9]+)|\\.?[0-9a-fA-F]*))(?=\\s)",
+          "name": "constant.numeric.egf"
+        }
+      ]
+    },
+    "string": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.egf",
+          "match": "\\\".*(?=\\\")\\\""
+        },
+        {
+          "begin": "\\s>>>(?=\\s)",
+          "comment": "multiline comments for iForth",
+          "end": "<<<",
+          "name": "string.quoted.triple.egf"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.egf"
+}

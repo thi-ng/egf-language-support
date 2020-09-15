@@ -1,0 +1,42 @@
+{
+  "name": "egf-language-support",
+  "displayName": "EGF syntax highlight",
+  "publisher": "thi-ng",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.49.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "egf",
+        "aliases": [
+          "Extensible Graph Format",
+          "egf"
+        ],
+        "extensions": [
+          ".egf"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "egf",
+        "scopeName": "source.egf",
+        "path": "./syntaxes/egf.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "egf",
+        "path": "./snippets.json"
+      }
+    ]
+  }
+}

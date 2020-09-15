@@ -1,0 +1,17 @@
+{
+  "@prefix": {
+    "prefix": "@p",
+    "body": ["@prefix ${1:prefix}: ${2:uri}", "$3"],
+    "description": "Prefix declaration"
+  },
+  "@include": {
+    "prefix": "@i",
+    "body": ["@include ${1:path}", "$2"],
+    "description": "Include declaration"
+  },
+  "#tag": {
+    "prefix": "#t",
+    "body": ["#${1|base64,date,file,gpg,hex,json,list,num|} ${2:value}"],
+    "description": "Tagged value"
+  }
+}
