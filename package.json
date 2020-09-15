@@ -3,7 +3,7 @@
   "displayName": "EGF language support",
   "publisher": "thi-ng",
   "description": "VSCode language support for Extensible Graph Format (https://thi.ng/egf)",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Karsten Schmidt <k+npm@thi.ng>",
   "repository": {
     "type": "git",
