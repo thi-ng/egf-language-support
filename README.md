@@ -1,23 +1,14 @@
-# Extensible Graph Format language support
+# Extensible Graph Format editor support
 
 ## Features
 
-Currently, this extension only provides [EGF syntax](https://thi.ng/egf)
-highlighting and some useful snippets for editing EGF files.
+This extension provides [EGF syntax](https://thi.ng/egf) highlighting and some
+useful snippets for editing EGF files.
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and
-how to install and configure them.
-
-## Extension Settings
-
-## Known Issues
+![screenshot (syntax highlighting)](images/readme.png)
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0 (2020-09-15)
+### 0.0.1 (2020-09-15)
 
 Initial release
