@@ -1,9 +1,14 @@
 {
   "name": "egf-language-support",
-  "displayName": "EGF syntax highlight",
+  "displayName": "EGF language support",
   "publisher": "thi-ng",
-  "description": "",
+  "description": "VSCode language support for Extensible Graph Format (https://thi.ng/egf)",
   "version": "0.0.1",
+  "author": "Karsten Schmidt <k+npm@thi.ng>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thi-ng/egf-language-support.git"
+  },
   "engines": {
     "vscode": "^1.49.0"
   },
