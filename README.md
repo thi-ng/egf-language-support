@@ -1,5 +1,7 @@
 # Extensible Graph Format editor support
 
+[VSCode Marketplace page](https://marketplace.visualstudio.com/items?itemName=thi-ng.egf-language-support)
+
 ## Features
 
 This extension provides [EGF syntax](https://thi.ng/egf) highlighting and some
